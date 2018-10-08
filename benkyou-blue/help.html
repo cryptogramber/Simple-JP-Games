@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1220, maximum-scale=1">
+	<link href="helpabout.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<title>Help!</title>
+</head>
+<body>
+
+  <div class="info_container">
+    <div id="select_hiragana"><a href="hiragana/index.html">hiragana</a>
+    </div>
+    <div id="select_katakana"><a href="katakana/index.html">katakana</a>
+    </div>
+    <div id="select_counters"><a href="kaimono/index.html">counters</a>
+    </div>
+    <div id="select_particles"><a href="joshi/index.html">particles</a>
+    </div>
+    <div id="help_me">help
+    </div>
+    <div id="about_this"><a href="about.html">about</a>
+    </div>
+  </div>
+
+  <div class="objects_container">
+		<div class="help_spacer">
+			<span class="headertext">hiragana and katakana</span><br />
+			Arrow keys or W/A/S/D keys can be used to direct the center character to the matching "outer" character. If the answer is correct, a new question will be presented; if the answer is incorrect, the incorrect options will disappear to help identify the correct character. For every 20 points that the score increases, the level will increase, which introduces an additional 5 characters.
+			<br /><br />
+			Clicking "reset" will reset the level/score/streak.<br />
+			Clicking "mode" will swap between romaji/hiragana (or katakana) as the center character.<br />
+			Clicking "level" will increase the # of available characters (max: 10), sidestepping the score-based progression.<br />
+		</div>
+		<div class="help_spacer">
+			<span class="headertext">counters</span><br />
+			A random number of objects will be presented with a short description; enter the number and the appropriate counter (don't include the name of the object!) in the text box and hit "enter" to submit. Japanese input is required to input the hiragana, romaji won't work.
+			<br /><br />
+			Clicking 「漢字」 will change the input mode to kanji (instead of hiragana); clicking again will toggle back to hiragana.<br />
+			Clicking "?" under "GUIDE" will show you the objects available, the hiragana representations I've used, and the appropriate kanji.
+			<br /><br />
+			Counters are.. tricky. I'm still not 100% sure for some of the categories I've put things in (e.g. pizza is in -まい right now because it is flat and thin.. but should it be -きれ because it's a slice of something?). I relied heavily upon these pages for reference:<br />
+			<ul>
+				<li><a href="http://www.eigo21.com/jp/number/index.htm">http://www.eigo21.com/jp/number/index.htm</a></li>
+				<li><a href="http://www.guidetojapanese.org/learn/complete/counting">http://www.guidetojapanese.org/learn/complete/counting</a></li>
+				<li><a href="https://en.wikipedia.org/wiki/Japanese_counter_word">https://en.wikipedia.org/wiki/Japanese_counter_word</a></li>
+			</ul>
+			It seems that there is some leeway with certain objects (i.e. when using -つ vs -こ), which means there might be no perfect answer for some objects. Hence the "guide" listing of where each object falls. If you think something is in the wrong place, let me know.
+		</div>
+		<div class="help_spacer">
+			<span class="headertext">particles</span><br />
+			A sentence with a missing particle (or missing particles) will be shown, along with 4 possible answers. Use either 1/2/3/4 (or A/S/D/F) keys to select the most correct particle, or select the particle by clicking w/the mouse. An English translation is shown to help with ambiguous cases where multiple particles might be grammatically correct.<br />
+			<br />
+			After the correct particle is chosen, it will take its rightful place in the sentence. Five seconds later, a new sentence will be shown.
+		</div>
+  </div>
+
+</body>
+</html>

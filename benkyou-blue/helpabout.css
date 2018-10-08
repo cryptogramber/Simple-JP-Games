@@ -1,0 +1,84 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	background-color: #03A9F4;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+}
+
+li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: #000;
+}
+
+.info_container {
+	background-color: #FF9800;
+	height: 30px;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+#select_hiragana, #select_katakana, #select_vocabulary, #select_particles, #select_counters {
+	float: left;
+	padding-left: 30px;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 20px;
+	padding-top: 1px;
+	color: #000;
+}
+
+#help_me {
+	float: right;
+	padding-right: 30px;
+	padding-top: 1px;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 20px;
+	color: #fff;
+}
+
+#about_this {
+	float: right;
+	padding-right: 30px;
+	padding-top: 1px;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 20px;
+	color: #fff;
+}
+
+.objects_container {
+	background-color: #4FC3F7;
+	width: 1200px;
+	height: 700px;
+	margin: 0px auto;
+	margin-top: 40px;
+	border-radius: 5px;
+	padding: 10px;
+	color: #000;
+}
+
+.help_spacer {
+	margin: 10px;
+}
+
+.headertext {
+	font-size: 20px;
+	font-weight: bold;
+	font-variant: small-caps;
+}

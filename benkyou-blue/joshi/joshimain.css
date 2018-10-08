@@ -1,0 +1,261 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	background: #03A9F4;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+}
+
+.info_container {
+	background: #FF9800;
+	height: 30px;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+#select_particles {
+	float: left;
+	padding-left: 30px;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 20px;
+	padding-top: 1px;
+	color: #fff;
+}
+
+#select_hiragana, #select_katakana, #select_counters {
+	float: left;
+	padding-left: 30px;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 20px;
+	padding-top: 1px;
+	color: #000;
+}
+
+#help_me, #about_this {
+	float: right;
+	padding-right: 30px;
+	padding-top: 1px;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 20px;
+	color: #000;
+}
+
+.control_container {
+	height: 150px;
+	width: 1220px;
+	margin: 0px auto;
+}
+
+.control_container:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.score {
+	width: 90px;
+	height: auto;
+	background: #FFC107;
+	border-radius: 5px;
+	float: left;
+	margin-right: 10px;
+	padding: 10px;
+}
+
+.streak {
+	width: 90px;
+	height: auto;
+	background: #FFC107;
+	border-radius: 5px;
+	float: left;
+	padding: 10px;
+}
+
+#questions {
+	width: 90px;
+	height: auto;
+	background: #FFC107;
+	border-radius: 5px;
+	float: right;
+	padding: 10px;
+}
+
+.score_title, .streak_title, .questions_title, .kanjikana_title {
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 26px;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+.score_update {
+	width: 90px;
+	height: 90px;
+	background: #fff;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 26px;
+	font-weight: bold;
+	line-height: 90px;
+	color: #000;
+}
+
+.score_streak {
+	width: 90px;
+	height: 90px;
+	background: #fff;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 26px;
+	font-weight: bold;
+	line-height: 90px;
+	color: #000;
+}
+
+.questions_link {
+	width: 90px;
+	height: 90px;
+	background: #FF9800;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 30px;
+	line-height: 90px;
+	color: #000;
+}
+
+.questions_link:hover {
+	color: #fff;
+}
+
+.sentence_container {
+	background: #4FC3F7;
+	width: 1200px;
+	height: 200px;
+	margin: 0px auto;
+	margin-top: 40px;
+	border-radius: 5px;
+	margin-bottom: 40px;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 50px;
+	line-height: 200px;
+	color: #000;
+}
+
+.translation_container {
+	background: #4FC3F7;
+	width: 1200px;
+	height: 100px;
+	margin: 0px auto;
+	border-radius: 5px;
+	margin-bottom: 40px;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 30px;
+	line-height: 100px;
+	color: #000;
+}
+
+.game_container {
+	background: #03A9F4;
+	width: 1220px;
+	height: 270px;
+	margin: 0px auto;
+	text-align: justify;
+}
+
+.game_container div {
+  display: inline-block;
+}
+
+#answer1, #answer2, #answer3, #answer4 {
+	border: solid 10px #FFC107;
+	background: #fff;
+	border-radius: 5px;
+	width: 220px;
+	height: 220px;
+	line-height: 220px;
+	font-size: 60px;
+	margin: 0px auto;
+	text-align: center;
+	margin-right: -5px;
+}
+
+#answer1:hover, #answer2:hover, #answer3:hover, #answer4:hover {
+	background: #FF9800;
+}
+
+.game_container:after {
+  content: '';
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 75%;
+	position: relative;
+	font-size: 14px;
+	transition: all 200ms ease-in-out;
+	color: #000;
+	font-variant: small-caps;
+}
+
+.popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #03A9F4;
+}
+
+.popup .close:hover {
+	color: #FFC107;
+}
+
+.popup .content {
+	max-height: 700px;
+	overflow: scroll;
+}
+
+.object_spacer {
+	margin-bottom: 5px;
+}

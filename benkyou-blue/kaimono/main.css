@@ -1,0 +1,526 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	background-color: #03A9F4;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+}
+
+.info_container {
+	background-color: #FF9800;
+	height: 30px;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+#select_counters {
+	float: left;
+	padding-left: 30px;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 20px;
+	padding-top: 1px;
+	color: #fff;
+}
+
+#select_hiragana, #select_katakana, #select_vocabulary, #select_particles {
+	float: left;
+	padding-left: 30px;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 20px;
+	padding-top: 1px;
+	color: #000;
+}
+
+#help_me, #about_this {
+	float: right;
+	padding-right: 30px;
+	padding-top: 1px;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 20px;
+	color: #000;
+}
+
+.control_container {
+	height: 150px;
+	width: 1220px;
+	margin: 0px auto;
+}
+
+.control_container:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.score {
+	width: 90px;
+	height: auto;
+	background: #FFC107;
+	border-radius: 5px;
+	float: left;
+	margin-right: 10px;
+	padding: 10px;
+}
+
+.streak {
+	width: 90px;
+	height: auto;
+	background: #FFC107;
+	border-radius: 5px;
+	float: left;
+	padding: 10px;
+}
+
+#questions {
+	width: 90px;
+	height: auto;
+	background: #FFC107;
+	border-radius: 5px;
+	float: right;
+	padding: 10px;
+}
+
+#kanjikana {
+	width: 90px;
+	height: auto;
+	background: #FFC107;
+	border-radius: 5px;
+	float: right;
+	padding: 10px;
+	margin-right: 10px;
+}
+
+.score_title, .streak_title, .questions_title, .kanjikana_title {
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 26px;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+.score_update {
+	width: 90px;
+	height: 90px;
+	background: #fff;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 26px;
+	font-weight: bold;
+	line-height: 90px;
+	color: #000;
+}
+
+.score_streak {
+	width: 90px;
+	height: 90px;
+	background: #fff;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 26px;
+	font-weight: bold;
+	line-height: 90px;
+	color: #000;
+}
+
+.kanji_or_kana {
+	width: 90px;
+	height: 90px;
+	background: #FF9800;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 30px;
+	line-height: 90px;
+	color: #000;
+}
+
+.questions_link {
+	width: 90px;
+	height: 90px;
+	background: #FF9800;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 30px;
+	line-height: 90px;
+	color: #000;
+}
+
+.kanji_or_kana:hover {
+	color: #fff;
+}
+
+.questions_link:hover {
+	color: #fff;
+}
+
+.objects_container {
+	background-color: #4FC3F7;
+	width: 1200px;
+	height: 200px;
+	margin: 0px auto;
+	margin-top: 40px;
+	border-radius: 5px;
+	margin-bottom: -10px;
+	line-height: 260px;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+	color: #000;
+}
+
+.description_container {
+	background-color: #4FC3F7;
+	width: 1200px;
+	height: 100px;
+	margin: 0px auto;
+	border-radius: 5px;
+	margin-top: -10px;
+	margin-bottom: 40px;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 30px;
+	color: #000;
+}
+
+.game_container {
+	background-color: #03A9F4;
+	width: 1220px;
+	height: 270px;
+	margin: 0px auto;
+}
+
+.counter_container {
+}
+
+#degreesc, #coffee, #beer, #misosoup, #bento, #balloons, #burger, #ramen, #fries, #people, #pills, #tomatoes, #candies, #baseballs,
+#apples, #doughnuts, #onigiri, #cookies, #chestnuts, #batteries, #paperclip, #oden, #rulers, #dango, #paintbrushes, #pencils, #bananas,
+#papers, #photographs, #envelopes, #shirts, #pizza, #books, #bicycles, #cars, #computers, #cats, #mice, #dogs, #bees, #insects, #fish,
+#birds, #rabbits, #boxes, #floors, #customers, #hours {
+	margin: 20px;
+	display: inline-block;
+	font-size: 60px;
+}
+
+#counter_entry {
+	border: solid 10px #FFC107;
+	width: 1200px;
+	height: 200px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 90px;
+	line-height: 95px;
+}
+
+.ic {
+	width: 70px;
+	height: 70px;
+	margin: 15px;
+	display: inline-block;
+}
+
+.icon-apple {
+	background-image:url('graphics/apple.png');
+	background-size: contain;
+}
+
+.icon-balloon {
+	background-image:url('graphics/balloon.png');
+	background-size: contain;
+}
+
+.icon-banana {
+	background-image:url('graphics/banana.png');
+	background-size: contain;
+}
+
+.icon-baseball {
+	background-image:url('graphics/baseball.png');
+	background-size: contain;
+}
+
+.icon-battery {
+	background-image:url('graphics/battery.png');
+	background-size: contain;
+}
+
+.icon-bee {
+	background-image:url('graphics/bee.png');
+	background-size: contain;
+}
+
+.icon-beer {
+	background-image:url('graphics/beer.png');
+	background-size: contain;
+}
+
+.icon-bento {
+	background-image:url('graphics/bento.png');
+	background-size: contain;
+}
+
+.icon-bicycle {
+	background-image:url('graphics/bicycle.png');
+	background-size: contain;
+}
+
+.icon-bird {
+	background-image:url('graphics/bird.png');
+	background-size: contain;
+}
+
+.icon-book {
+	background-image:url('graphics/book.png');
+	background-size: contain;
+}
+
+.icon-box {
+	background-image: url('graphics/box.png');
+	background-size: contain;
+}
+
+.icon-burger {
+	background-image:url('graphics/burger.png');
+	background-size: contain;
+}
+
+.icon-candy {
+	background-image:url('graphics/candy.png');
+	background-size: contain;
+}
+
+.icon-car {
+	background-image:url('graphics/car.png');
+	background-size: contain;
+}
+
+.icon-cat {
+	background-image:url('graphics/cat.png');
+	background-size: contain;
+}
+
+.icon-chestnut {
+	background-image: url('graphics/chestnut.png');
+	background-size: contain;
+}
+
+.icon-coffee {
+	background-image: url('graphics/coffee.png');
+	background-size: contain;
+}
+
+.icon-computer {
+	background-image: url('graphics/computer.png');
+	background-size: contain;
+}
+
+.icon-cookie {
+	background-image:url('graphics/cookie.png');
+	background-size: contain;
+}
+
+.icon-customer {
+	background-image: url('graphics/customer.png');
+	background-size: contain;
+}
+
+.icon-dango {
+	background-image:url('graphics/dango.png');
+	background-size: contain;
+}
+
+.icon-degreesc {
+	background-image: url('graphics/degreesc.png');
+	background-size: contain;
+}
+
+.icon-dog {
+	background-image:url('graphics/dog.png');
+	background-size: contain;
+}
+
+.icon-doughnut {
+	background-image:url('graphics/doughnut.png');
+	background-size: contain;
+}
+
+.icon-envelope {
+	background-image:url('graphics/envelope.png');
+	background-size: contain;
+}
+
+.icon-fish {
+	background-image:url('graphics/fish.png');
+	background-size: contain;
+}
+
+.icon-floor {
+	background-image: url('graphics/floor.png');
+	background-size: contain;
+}
+
+.icon-fries {
+	background-image: url('graphics/fries.png');
+	background-size: contain;
+}
+
+.icon-hour {
+	background-image: url('graphics/hour.png');
+	background-size: contain;
+}
+
+.icon-insect {
+	background-image: url('graphics/insect.png');
+	background-size: contain;
+}
+
+.icon-misosoup {
+	background-image: url('graphics/misosoup.png');
+	background-size: contain;
+}
+
+.icon-mouse {
+	background-image:url('graphics/mouse.png');
+	background-size: contain;
+}
+
+.icon-oden {
+	background-image: url('graphics/oden.png');
+	background-size: contain;
+}
+
+.icon-onigiri {
+	background-image:url('graphics/onigiri.png');
+	background-size: contain;
+}
+
+.icon-paintbrush {
+	background-image:url('graphics/paintbrush.png');
+	background-size: contain;
+}
+
+.icon-paper {
+	background-image:url('graphics/paper.png');
+	background-size: contain;
+}
+
+.icon-paperclip {
+	background-image:url('graphics/paperclip.png');
+	background-size: contain;
+}
+
+.icon-pencil {
+	background-image:url('graphics/pencil.png');
+	background-size: contain;
+}
+
+.icon-person {
+	background-image:url('graphics/person.png');
+	background-size: contain;
+}
+
+.icon-photo {
+	background-image:url('graphics/photo.png');
+	background-size: contain;
+}
+
+.icon-pill {
+	background-image:url('graphics/pill.png');
+	background-size: contain;
+}
+
+.icon-pizza {
+	background-image:url('graphics/pizza.png');
+	background-size: contain;
+}
+
+.icon-rabbit {
+	background-image: url('graphics/rabbit.png');
+	background-size: contain;
+}
+
+.icon-ramen {
+	background-image: url('graphics/ramen.png');
+	background-size: contain;
+}
+
+.icon-ruler {
+	background-image: url('graphics/ruler.png');
+	background-size: contain;
+}
+
+.icon-tomato {
+	background-image:url('graphics/tomato.png');
+	background-size: contain;
+}
+
+.icon-tshirt {
+	background-image:url('graphics/tshirt.png');
+	background-size: contain;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 75%;
+	position: relative;
+	font-size: 14px;
+	transition: all 200ms ease-in-out;
+	color: #000;
+	font-variant: small-caps;
+}
+
+.popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #03A9F4;
+}
+
+.popup .close:hover {
+	color: #FFC107;
+}
+
+.popup .content {
+	max-height: 700px;
+	overflow: scroll;
+}
+
+.object_spacer {
+	margin-bottom: 5px;
+}
